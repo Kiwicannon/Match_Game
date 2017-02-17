@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700i|Sansita');
+div#memory_board{
+    border: #999 1px solid;
+    width: 800px;
+    height: 540px;
+    margin: 0px auto;
+    border: 0px;
+}
+div#memory_board > div{
+    /*background: url(rock.jpg) no-repeat;*/
+    border: #000 1px solid;
+    width: 85px;
+    height: 85px;
+    float: left;
+    margin: 15px;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+html{
+    background: url(mtn.jpg) no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 125vh;
+}
+.image{
+    width: 10vw;
+    height: 10vh
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+    color: #527da7;
+    text-shadow:
+    1px 1px 0 #000; ;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+h2{
+    text-align: center;
+    font-size: 55px;
+   color: #527da7;
+    text-shadow:
+    3px 3px 3px black;
+    font-style: italic;
+    margin-right:40px;
+    margin-left: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+h3{
+     text-align: center;
+    font-size: 45px;
+   color: #527da7;
+    text-shadow:
+    3px 3px 3px black;
+    font-style: italic;
+    font-family: 'Sansita', sans-serif;
+}
+
+.wordsContainer{
+   position: relative;
+    
+}
+.matchWords{
+font-size: 35px;
+font-family: 'Sansita', sans-serif;
+color: white;
+    text-shadow:
+    1px 1px 0 #000; 
+}
+.matchPics{
+font-size: 35px;
+margin-right: 35px;
+font-family: 'Sansita', sans-serif;
+color: white;
+    text-shadow:
+    1px 1px 0 #000; 
+}
+.home{
+font-size: 35px;
+margin-left: 35px;
+font-family: 'Sansita', sans-serif;
+color: white;
+    text-shadow:
+    1px 1px 0 #000; 
+}
+.buttons{
+display: flex;
+justify-content: space-between;
+margin: auto;
+}
+nav{
+    text-align: center;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between
+
+}
+.navContainer{
+  position: relative
+
+}
+.quotesBox{
+    background: lightslategray;
+    padding:10px;
+    opacity: .75;
+
+}
+
+
