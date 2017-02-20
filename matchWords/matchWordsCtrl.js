@@ -22,6 +22,7 @@ Array.prototype.memory_tile_shuffle = function () {
 }
 
 function newBoard() {
+    console.log('ran')
     tiles_flipped = 0;
     var output = '';
     memory_array.memory_tile_shuffle();
@@ -33,10 +34,14 @@ function newBoard() {
 }
 
 function memoryFlipTile(tile, val) {
+     console.log('ran')
     if (tile.innerHTML == "" && memory_values.length < 2) {
-        tile.style.background = '#fff'//`url(${val})`;
-        tile.style.backgroundSize = 'cover'
-        tile.innerHTML = val;
+       if(val.includes('http') == true){
+        tile.style.background = `url(${val})`;
+        tile.style.backgroundSize = 'cover'}
+        else {
+        tile.style.background = 'paleturquoise'
+        tile.innerHTML = val;}
         if (memory_values.length == 0) {
             memory_values.push(val);
             memory_tile_ids.push(tile.id);
@@ -49,13 +54,16 @@ function memoryFlipTile(tile, val) {
                 memory_values = [];
                 memory_tile_ids = [];
                 // Check to see if the whole board is cleared
+                //console.log(tiles_flipped, memory_array.length)
                 if (tiles_flipped == memory_array.length) {
+                    console.log('ran')
                     alert("Board cleared... generating new board");
                     document.getElementById('memory_board').innerHTML = "";
                     newBoard();
                 }
             } else {
                 function flip2Back() {
+                     console.log('ran')
                     // Flip the 2 tiles back over
                     var tile_1 = document.getElementById(memory_tile_ids[0]);
                     var tile_2 = document.getElementById(memory_tile_ids[1]);

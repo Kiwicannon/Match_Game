@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700i|Sansita');
-div#memory_board{
+div#memory_board {
     border: #999 1px solid;
     margin: 0px auto;
     border: 0px;
@@ -8,15 +8,16 @@ div#memory_board{
     flex-direction: row;
     flex-wrap: wrap;
     padding: 25px;
-    opacity: .8;
+    opacity: .9;
 }
-div#memory_board > div{
+
+div#memory_board>div {
     background: url(rock.jpg) no-repeat;
     border: #000 1px solid;
-    width: 105px;
-    height: 105px;
+    width: 135px;
+    height: 135px;
     float: left;
-    margin: 20px 9px 0px 9px;
+    margin: 20px 30px 10px 30px;
     padding: 25px;
     font-size: 20px;
     cursor: pointer;
@@ -26,109 +27,116 @@ div#memory_board > div{
     justify-content: center;
     flex-direction: column;
 }
-html{
+
+html {
     background: url(mtn.jpg) no-repeat;
     background-size: cover;
+    padding-bottom: 20px;
 }
-.image{
+
+body {
+    padding-bottom: 20px;
+}
+
+.image {
     width: 10vw;
     height: 10vh
 }
-h1{
+
+h1 {
     text-align: center;
     font-size: 70px;
     color: #527da7;
-    text-shadow:
-    3px 3px 3px lightskyblue; ;
+    text-shadow: 3px 3px 3px lightskyblue;
+    ;
     margin-top: 10px;
     font-family: 'Open Sans', sans-serif;
 }
-.description{
+
+.description {
     text-align: center;
     font-size: 45px;
     color: #527da7;
-    text-shadow:
-    2px 2px 1px black; ;
+    text-shadow: 2px 2px 1px black;
+    ;
     margin-top: 10px;
     font-family: 'Open Sans', sans-serif;
 }
-h2{
+
+h2 {
     text-align: center;
     font-size: 55px;
-   color: #527da7;
-    text-shadow:
-    3px 3px 3px black;
+    color: #527da7;
+    text-shadow: 3px 3px 3px black;
     font-style: italic;
-    margin-right:40px;
+    margin-right: 40px;
     margin-left: 40px;
     font-family: 'Open Sans', sans-serif;
     z-index: 2;
 }
-h3{
-     text-align: center;
+
+h3 {
+    text-align: center;
     font-size: 45px;
-   color: #527da7;
-    text-shadow:
-    3px 3px 3px black;
+    color: #527da7;
+    text-shadow: 3px 3px 3px black;
     font-style: italic;
     font-family: 'Sansita', sans-serif;
 }
 
-.wordsContainer{
-   position: relative;
-    
+.wordsContainer {
+    position: relative;
 }
-.matchWords{
-font-size: 35px;
-font-family: 'Sansita', sans-serif;
-color: white;
-    text-shadow:
-    1px 1px 0 #000; 
+
+.matchWords {
+    font-size: 35px;
+    font-family: 'Sansita', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 0 #000;
 }
-.matchPics{
-font-size: 35px;
-margin-right: 35px;
-font-family: 'Sansita', sans-serif;
-color: white;
-    text-shadow:
-    1px 1px 0 #000; 
+
+.matchPics {
+    font-size: 35px;
+    margin-right: 35px;
+    font-family: 'Sansita', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 0 #000;
 }
-.home{
-font-size: 35px;
-margin-left: 35px;
-font-family: 'Sansita', sans-serif;
-color: white;
-    text-shadow:
-    1px 1px 0 #000; 
+
+.home {
+    font-size: 35px;
+    margin-left: 35px;
+    font-family: 'Sansita', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 0 #000;
 }
-.buttons{
-display: flex;
-justify-content: space-between;
-margin: auto;
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
 }
-nav{
+
+nav {
     text-align: center;
     padding-bottom: 25px;
     display: flex;
     justify-content: space-between
-
 }
-.navContainer{
-  position: relative
 
+.navContainer {
+    position: relative
 }
-.quotesBox{
+
+.quotesBox {
     background: lightslategray;
     opacity: .8;
-
 }
-.matchWordsBox{
+
+.matchWordsBox {
     background: lightslategray;
-
 }
-.matchPicsBox{
+
+.matchPicsBox {
     background: lightslategray;
-
 }
-
-

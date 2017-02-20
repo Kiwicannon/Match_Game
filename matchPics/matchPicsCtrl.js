@@ -12,6 +12,7 @@ savedApi.forEach(function (element, i, arr) {
 })
 
 
+                   
 
 // var image = 'url(' + savedApi[0].urls.regular + ')'
 var memory_values = [];
@@ -29,6 +30,7 @@ Array.prototype.memory_tile_shuffle = function () {
 }
 
 function newBoard() {
+    console.log('ran')
     tiles_flipped = 0;
     var output = '';
     memory_array.memory_tile_shuffle();
@@ -40,6 +42,8 @@ function newBoard() {
 }
 
 function memoryFlipTile(tile, val) {
+    console.log(tiles_flipped)
+    console.log('ran')
     if (tile.innerHTML == "" && memory_values.length < 2) {
         tile.style.background =   `url(${val})`;
         tile.style.backgroundSize = 'cover'
@@ -47,17 +51,22 @@ function memoryFlipTile(tile, val) {
          document.getElementById(memory_tile_ids[i]).style.background ='white'}
         //tile.innerHTML = val;
         if (memory_values.length == 0) {
+            console.log(tiles_flipped)
             memory_values.push(val);
             memory_tile_ids.push(tile.id);
         } else if (memory_values.length == 1) {
             memory_values.push(val);
             memory_tile_ids.push(tile.id);
             if (memory_values[0] == memory_values[1]) {
+                console.log(tiles_flipped)
                 tiles_flipped += 2;
                 // Clear both arrays
                 memory_values = [];
                 memory_tile_ids = [];
+                    console.log(tiles_flipped)
+                    console.log(memory_array.length)
                 // Check to see if the whole board is cleared
+                console.log(tiles_flipped, memory_array.length)
                 if (tiles_flipped == memory_array.length) {
                     alert("Board cleared... generating new board");
                     document.getElementById('memory_board').innerHTML = "";
@@ -65,6 +74,7 @@ function memoryFlipTile(tile, val) {
                 }
             } else {
                 function flip2Back() {
+                     console.log('ran')
                     // Flip the 2 tiles back over
                     var tile_1 = document.getElementById(memory_tile_ids[0]);
                     var tile_2 = document.getElementById(memory_tile_ids[1]);
