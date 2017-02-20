@@ -1,7 +1,7 @@
 angular.module('app')
     .controller('matchWordsCtrl', function ($scope, mainSvc) {
  //$scope.pics=mainSvc.getPics()
- var memory_array= ['Service','Service','B','B','C','C','D','D','E','E','F','F','G','G','H','H','I','I','J','J']
+ var memory_array= ['Service','Service','Controller','Controller','Html','Html','JavaScript','JavaScript','GitHub','GitHub','Directive','Directive','CSS','CSS','jQuary','jQuary','API','API','console.log','console.log']
 
 
 

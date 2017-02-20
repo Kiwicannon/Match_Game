@@ -608,7 +608,7 @@ var savedApi = [{
 //     memory_array.push(element.urls.thumb)
 // })
 
-//var memory_array= ['A','A','B','B','C','C','D','D','E','E','F','F','G','G','H','H','I','I']
+
 
 
 
@@ -645,7 +645,7 @@ function memoryFlipTile(tile, val) {
         tile.style.background = `url(${val})`;
         tile.style.backgroundSize = 'cover'}
         else {
-        tile.style.background = '#006400'
+        tile.style.background = 'paleturquoise'
         tile.innerHTML = val;}
         if (memory_values.length == 0) {
             memory_values.push(val);

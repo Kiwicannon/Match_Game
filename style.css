@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700i|Sansita');
 div#memory_board{
     border: #999 1px solid;
-    width: 800px;
-    height: 540px;
     margin: 0px auto;
     border: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px;
+    opacity: .8;
 }
 div#memory_board > div{
-    /*background: url(rock.jpg) no-repeat;*/
+    background: url(rock.jpg) no-repeat;
     border: #000 1px solid;
-    width: 85px;
-    height: 85px;
+    width: 105px;
+    height: 105px;
     float: left;
-    margin: 15px;
-    padding: 20px;
+    margin: 20px 9px 0px 9px;
+    padding: 25px;
     font-size: 20px;
     cursor: pointer;
     text-align: center;
@@ -25,8 +29,6 @@ div#memory_board > div{
 html{
     background: url(mtn.jpg) no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 125vh;
 }
 .image{
     width: 10vw;
@@ -37,7 +39,16 @@ h1{
     font-size: 70px;
     color: #527da7;
     text-shadow:
-    1px 1px 0 #000; ;
+    3px 3px 3px lightskyblue; ;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.description{
+    text-align: center;
+    font-size: 45px;
+    color: #527da7;
+    text-shadow:
+    2px 2px 1px black; ;
     margin-top: 10px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -51,6 +62,7 @@ h2{
     margin-right:40px;
     margin-left: 40px;
     font-family: 'Open Sans', sans-serif;
+    z-index: 2;
 }
 h3{
      text-align: center;
@@ -107,8 +119,15 @@ nav{
 }
 .quotesBox{
     background: lightslategray;
-    padding:10px;
-    opacity: .75;
+    opacity: .8;
+
+}
+.matchWordsBox{
+    background: lightslategray;
+
+}
+.matchPicsBox{
+    background: lightslategray;
 
 }
 
