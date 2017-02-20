@@ -129,14 +129,13 @@ nav {
 }
 
 .quotesBox {
-    background: lightslategray;
-    opacity: .8;
+  background: rgba(119, 136, 153, 0.8);
 }
 
 .matchWordsBox {
-    background: lightslategray;
+    background: rgba(119, 136, 153, 0.8);
 }
 
 .matchPicsBox {
-    background: lightslategray;
+   background: rgba(119, 136, 153, 0.8);
 }
